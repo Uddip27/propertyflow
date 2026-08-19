@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "PropertyFlow CRM"
+description = "A polished real-estate CRM for property dealers and agencies to manage leads, listings, follow-ups, deals, WhatsApp outreach, and performance reports."
+version = "1.0.0"
+id = "artifacts/propertyflow"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18331
+
+[services.development]
+run = "pnpm --filter @workspace/propertyflow run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/propertyflow", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/propertyflow/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18331"
+BASE_PATH = "/"

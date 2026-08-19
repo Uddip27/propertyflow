@@ -1,0 +1,474 @@
+Build a modern Real Estate CRM SaaS MVP called "PropertyFlow".
+
+TARGET USERS:
+- Real Estate Agents
+- Property Dealers
+- Real Estate Agencies
+
+TECH STACK:
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- PostgreSQL-ready architecture
+
+GOAL:
+Help property dealers manage leads, properties, follow-ups and sales opportunities.
+
+MVP FEATURES ONLY:
+1. Authentication
+2. Dashboard
+3. Lead Management
+4. Property Listings
+5. Follow-Up Management
+6. WhatsApp Integration
+7. Deals Pipeline
+8. Basic Reports
+
+DO NOT BUILD:
+- AI recommendations
+- Property valuation
+- Mortgage calculator
+- Virtual tours
+- Maps integration
+- Multi-company support
+- Mobile app
+- Accounting system
+
+--------------------------------
+SCREEN 1 — LOGIN
+--------------------------------
+
+Fields:
+- Email
+- Password
+
+Buttons:
+- Login
+- Forgot Password
+
+Demo Account:
+Agent Login
+
+--------------------------------
+SCREEN 2 — DASHBOARD
+--------------------------------
+
+Statistics Cards:
+
+Total Leads
+245
+
+New Leads
+18
+
+Follow-Ups Today
+12
+
+Properties
+87
+
+Deals Closed This Month
+₹85,00,000
+
+Recent Leads Table
+
+Upcoming Follow-Ups
+
+Lead Source Breakdown
+
+--------------------------------
+SCREEN 3 — LEAD MANAGEMENT
+--------------------------------
+
+Lead Table:
+
+Lead Name
+Phone
+Email
+Budget
+Location Preference
+Lead Source
+Status
+Assigned Agent
+Last Contact
+
+Status Options:
+
+New
+Contacted
+Interested
+Site Visit Scheduled
+Negotiation
+Won
+Lost
+
+Actions:
+
+View
+Edit
+Delete
+
+Add Lead Form:
+
+Name
+Phone
+Email
+Budget
+Interested Location
+Property Type
+Lead Source
+Notes
+
+--------------------------------
+SCREEN 4 — LEAD DETAILS
+--------------------------------
+
+Lead Profile:
+
+Name
+Phone
+Email
+Budget
+
+Interested Properties
+
+Communication History
+
+Follow-Up Timeline
+
+Buttons:
+
+Call
+WhatsApp
+Schedule Follow-Up
+Mark Won
+Mark Lost
+
+Notes Section
+
+--------------------------------
+SCREEN 5 — PROPERTY LISTINGS
+--------------------------------
+
+Property Table:
+
+Property ID
+Title
+Location
+Type
+Price
+Status
+
+Property Types:
+
+Apartment
+House
+Villa
+Commercial
+Land
+
+Status:
+
+Available
+Booked
+Sold
+
+Add Property Form:
+
+Property Title
+Description
+Location
+Property Type
+Price
+Bedrooms
+Bathrooms
+Area
+Status
+
+Upload Images Placeholder
+
+--------------------------------
+SCREEN 6 — PROPERTY DETAILS
+--------------------------------
+
+Show:
+
+Property Information
+
+Price
+
+Features
+
+Images
+
+Interested Leads
+
+Buttons:
+
+Assign Lead
+Edit Property
+
+--------------------------------
+SCREEN 7 — FOLLOW-UP MANAGEMENT
+--------------------------------
+
+Follow-Up Table:
+
+Lead Name
+Date
+Time
+Purpose
+Status
+
+Statuses:
+
+Pending
+Completed
+Missed
+
+Add Follow-Up Form:
+
+Lead
+Date
+Time
+Notes
+
+Dashboard Widget:
+
+Today's Follow-Ups
+
+Overdue Follow-Ups
+
+--------------------------------
+SCREEN 8 — WHATSAPP INTEGRATION
+--------------------------------
+
+Lead Detail Page:
+
+Button:
+
+Send WhatsApp
+
+Pre-built Templates:
+
+Hello {{name}}, thank you for your interest.
+
+Property visit reminder.
+
+Follow-up reminder.
+
+Property availability update.
+
+Open WhatsApp with pre-filled message.
+
+Do not build WhatsApp API integration yet.
+
+Just generate WhatsApp links.
+
+--------------------------------
+SCREEN 9 — DEALS PIPELINE
+--------------------------------
+
+Kanban Board
+
+Columns:
+
+New Lead
+
+Contacted
+
+Interested
+
+Site Visit
+
+Negotiation
+
+Won
+
+Lost
+
+Drag and Drop Leads.
+
+Each card shows:
+
+Name
+
+Budget
+
+Phone
+
+Next Follow-Up Date
+
+--------------------------------
+SCREEN 10 — REPORTS
+--------------------------------
+
+Show:
+
+Total Leads
+
+Lead Conversion Rate
+
+Deals Won
+
+Deals Lost
+
+Revenue Closed
+
+Lead Source Performance
+
+Filters:
+
+Today
+7 Days
+30 Days
+Custom Range
+
+--------------------------------
+DATABASE TABLES
+
+users
+id
+name
+email
+password
+
+leads
+id
+name
+phone
+email
+budget
+location
+status
+lead_source
+notes
+
+properties
+id
+title
+description
+location
+type
+price
+status
+
+follow_ups
+id
+lead_id
+date
+time
+status
+notes
+
+lead_properties
+id
+lead_id
+property_id
+
+deals
+id
+lead_id
+property_id
+deal_value
+status
+
+--------------------------------
+DEMO DATA
+
+Agency:
+Dream Homes Realty
+
+Leads:
+50+
+
+Properties:
+100+
+
+Agents:
+5
+
+Locations:
+Siliguri
+Darjeeling
+Jalpaiguri
+Sikkim
+
+Property Types:
+Apartment
+Villa
+Commercial
+Land
+
+Currency:
+INR
+
+--------------------------------
+MAIN USER FLOW
+
+Login
+↓
+Add Lead
+↓
+Add Property
+↓
+Assign Property to Lead
+↓
+Schedule Follow-Up
+↓
+Send WhatsApp Message
+↓
+Move Lead Through Pipeline
+↓
+Close Deal
+↓
+View Reports
+
+--------------------------------
+UI DESIGN
+
+Modern SaaS Interface
+
+Left Sidebar
+
+Dashboard
+Leads
+Properties
+Follow-Ups
+Pipeline
+Reports
+Settings
+
+Top Header:
+Search
+Notifications
+Profile
+
+Use realistic real-estate styling.
+
+Professional commercial appearance.
+
+Large data tables.
+
+Clean cards.
+
+Good mobile responsiveness.
+
+--------------------------------
+FINAL REQUIREMENT
+
+Build the complete frontend MVP with realistic demo data.
+
+The application should look like a real estate CRM that a property dealer would be willing to pay for.
+
+Prioritize:
+
+1. Lead Management
+2. Property Listings
+3. Follow-Ups
+4. WhatsApp Actions
+5. Sales Pipeline
+
+Keep the MVP simple but production-quality.
