@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm -C artifacts/propertyflow build",
+  "buildCommand": "pnpm --filter @workspace/propertyflow build",
   "outputDirectory": "artifacts/propertyflow/dist/public",
   "framework": "vite",
   "installCommand": "pnpm install",
