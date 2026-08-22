@@ -1,0 +1,7 @@
+{
+  "buildCommand": "pnpm --filter @workspace/propertyflow build",
+  "outputDirectory": "artifacts/propertyflow/dist/public",
+  "framework": "vite",
+  "installCommand": "pnpm install",
+  "nodeVersion": "24.x"
+}
