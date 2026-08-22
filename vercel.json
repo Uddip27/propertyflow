@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm --filter @workspace/propertyflow run build",
+  "buildCommand": "node scripts/build-frontend.mjs",
   "outputDirectory": "artifacts/propertyflow/dist/public",
   "framework": "vite",
   "installCommand": "pnpm install",
