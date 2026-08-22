@@ -1,7 +1,8 @@
 {
-  "buildCommand": "node scripts/build-frontend.mjs",
-  "outputDirectory": "artifacts/propertyflow/dist/public",
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "dist/public",
   "framework": "vite",
   "installCommand": "pnpm install",
-  "nodeVersion": "24.x"
+  "nodeVersion": "24.x",
+  "rootDirectory": "artifacts/propertyflow"
 }
