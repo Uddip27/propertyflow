@@ -1,0 +1,8 @@
+artifacts/api-server/
+artifacts/mockup-sandbox/
+scripts/
+lib/
+*.md
+.replit
+.replitignore
+.gitignore
